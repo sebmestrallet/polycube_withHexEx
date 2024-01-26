@@ -1,3 +1,6 @@
 [submodule "ultimaille"]
 	path = ultimaille
 	url = https://github.com/ssloy/ultimaille
+[submodule "libHexEx"]
+	path = libHexEx
+	url = https://gitlab.vci.rwth-aachen.de:9000/HexEx/libHexEx.git

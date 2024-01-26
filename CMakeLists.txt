@@ -3,12 +3,12 @@ project(Polycube)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+add_subdirectory(OpenVolumeMesh)
+
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/libHexEx/cmake)
 set(OPENVOLUMEMESH_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libHexEx/OpenVolumeMesh)
 add_definitions(-DHEXEX_VERBOSE)
 add_subdirectory(libHexEx)
-
-
 
 add_subdirectory(ultimaille)
 include_directories(ultimaille ultimaille/ext)

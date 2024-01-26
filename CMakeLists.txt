@@ -4,11 +4,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(OpenVolumeMesh)
+include_directories(OpenVolumeMesh/src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/OpenVolumeMesh/src)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/libHexEx/cmake)
-set(OPENVOLUMEMESH_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libHexEx/OpenVolumeMesh)
 add_definitions(-DHEXEX_VERBOSE)
 add_subdirectory(libHexEx)
+include_directories(libHexEx/src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libHexEx/src)
 
 add_subdirectory(ultimaille)
 include_directories(ultimaille ultimaille/ext)
@@ -26,7 +29,7 @@ endif()
 
 
 add_executable(polycube main.cpp HexExWrapper.h HexExWrapper.cpp)
-target_link_libraries(polycube ultimaille OpenNL_psm HexExStatic)
+target_link_libraries(polycube ultimaille OpenNL_psm OpenVolumeMesh HexEx)
 
 
 if(OpenMP_CXX_FOUND)

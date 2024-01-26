@@ -1,6 +1,6 @@
 #include "HexExWrapper.h"
 
-#include <HexEx.hh>
+#include <HexEx/HexEx.hh>
 //#include <OpenVolumeMesh/Mesh/HexahedralMeshIterators.hh>
 //#include <OpenVolumeMesh/FileManager/FileManager.hh>
 using namespace UM;

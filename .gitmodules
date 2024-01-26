@@ -4,3 +4,6 @@
 [submodule "libHexEx"]
 	path = libHexEx
 	url = https://gitlab.vci.rwth-aachen.de:9000/HexEx/libHexEx.git
+[submodule "OpenVolumeMesh"]
+	path = OpenVolumeMesh
+	url = https://gitlab.vci.rwth-aachen.de:9000/OpenVolumeMesh/OpenVolumeMesh.git

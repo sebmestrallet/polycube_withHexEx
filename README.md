@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> In this branch, both libHexEx and OpenVolumeMesh are submodules.
+> libHexEx has been updated from `master` branch, commit [`dfb6578c`](https://gitlab.vci.rwth-aachen.de:9000/HexEx/libHexEx/-/commit/dfb6578ca82a828fbb79523b1e1f0dc4dd476132) (2021-01-27) to `algohex` branch, commit [`61ccd7ae`](https://gitlab.vci.rwth-aachen.de:9000/HexEx/libHexEx/-/commit/61ccd7ae3ffe085d84144c601cb7c399c33afc0b) (2022-06-22). More recent commits seem break to break compilation.
+> OpenVolumeMesh has been updated from [`v2.1`](https://gitlab.vci.rwth-aachen.de:9000/OpenVolumeMesh/OpenVolumeMesh/-/tags/v2.1) (2019-09-09) to [`v3.2.1`](https://gitlab.vci.rwth-aachen.de:9000/OpenVolumeMesh/OpenVolumeMesh/-/tags/v3.2.1) (2022-08-18). More recent commits seem incompatibles with libHexEx.
+
 # polycube with HexEx
 
 Constructs a hexmesh from a flagged tetrahedral mesh with a polycube, using [HexEx](https://gitlab.vci.rwth-aachen.de:9000/HexEx/libHexEx). Somehow OpenVolumeMesh and HexEx don't look compatible anymore on my MVSC? I did some tweaking, and there is so much warning, it is a mystery that it works, but i guess it does...
